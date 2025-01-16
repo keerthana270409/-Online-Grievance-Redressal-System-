@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Grievance Redressal System</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Online Grievance Redressal System</h1>
+            <h2>Feedback Form</h2>
+        </header>
+
+        
+        <form action="#" method="POST" class="feedback-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="grievance-type">Type of Grievance</label>
+            <select id="grievance-type" name="grievance-type" required>
+                <option value="service">Service-related</option>
+                <option value="technical">Technical Issue</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="feedback">Feedback/Complaint</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Describe your feedback or complaint" required></textarea>
+
+            <div class="submit-btn">
+                <button type="submit">Submit Feedback</button>
+            </div>
+        </form>
+
+        
+        <footer>
+            <p>&copy; 2024 Online Grievance Redressal System. All rights reserved.</p>
+        </footer>
+    </div>
+	<script src="feedback.js"></script>
+</body>
+</html>

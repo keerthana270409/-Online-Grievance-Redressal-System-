@@ -1,0 +1,97 @@
+.container{
+	background-color:white;
+	border-style:solid;
+	border-color:black;
+	display:inline-block;
+	margin:100px 100px 200px 550px;
+	/*top right bottom left*/ 
+	border-radius:20px;
+	padding:35px;
+	box-sizing:border-box;
+}
+h1{
+	text-align:center;
+}
+p{
+	text-align:center;
+}
+input[type=text]{
+	width:100%;
+	padding:15px 15px 15px 35px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color:white;
+}
+input[type=password]{
+	width:100%;
+	padding:15px 15px 15px 35px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color:white;
+}
+.button{
+	text-align:center;
+	width:100%;
+	border:None;
+	cursor:pointer;
+	height:40px;
+	font-size:16px;
+	color:black;
+	background-color:green;
+	border-radius:5px;
+}
+button:hover{
+	background-color:lightblue;
+}
+
+
+h4{
+	text-align:center;
+}
+.button1{
+	text-align:center;
+	width:100%;
+	border:None;
+	cursor:pointer;
+	height:40px;
+	font-size:16px;
+	border-radius:6px;
+	color:black;
+	background-color:green;
+}
+.button1:hover{
+	background-color:lightblue;
+}
+body{
+	
+	background-color:lightblue;
+}
+label{
+	font-family:Arial;
+}
+.icon1{
+	background-image: url("https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg");
+	background-size:30px;
+	background-position:left;
+	background-repeat: no-repeat;
+}
+.icon2{
+	background-image: url("https://png.pngtree.com/png-clipart/20201208/original/pngtree-email-icon-design-png-image_5571212.jpg");
+	background-size:30px;
+	background-position:left;
+	background-repeat: no-repeat;
+}
+.icon3{
+	background-image: url("https://icons.veryicon.com/png/o/miscellaneous/face-monochrome-icon/password-76.png");
+	background-size:25px;
+	background-position:left;
+	background-repeat: no-repeat;
+}
+.icon4{
+	background-image: url("https://icons.veryicon.com/png/o/miscellaneous/face-monochrome-icon/password-76.png");
+	background-size:25px;
+	background-position:left;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Grievance Redressal System</title>
+    <link rel="stylesheet" href="userdashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, User</h1>
+        <nav>
+            <!--<a href="file_grievance.html">File Grievance</a>
+            <a href="track_grievance.html">Track Grievance</a>
+            <a href="login.html" onclick="logout()">Logout</a>-->
+        </nav>
+    </header>
+
+    <main>
+        <section class="user-dashboard">
+            <h2>Your Dashboard</h2>
+            <p>Manage your grievances below:</p>
+
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h3>File a Grievance</h3>
+                    <p>Submit your complaints or issues.</p>
+                    <button class="button" onclick="window.location.href='file-grievance.html'">File a Grievance</button>
+                </div>
+
+                <div class="card">
+                    <h3>Track a Grievance</h3>
+                    <p>Check the status of your submitted grievances.</p>
+                    <button class="button" onclick="window.location.href='track-grievance.html'">Track Grievance</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Grievance Redressal System. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Logout function for User
+        function logout() {
+            // Clear user session data and log out the user
+            sessionStorage.removeItem('userLoggedIn');
+            window.location.href = "login.html";  // Redirect to login page
+        }
+    </script>
+	<script src="userdashboard.js"></script>
+</body>
+</html>

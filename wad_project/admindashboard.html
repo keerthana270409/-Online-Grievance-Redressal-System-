@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Grievance Redressal System</title>
+    <link rel="stylesheet" href="admindashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome, Admin</h1>
+        <nav>
+            <!--<a href="#manage_grievances.html">Manage Grievances</a>
+            <a href="#view_users.html">View Users</a>
+            <a href="#login.html" onclick="logout()">Logout</a>-->
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-dashboard">
+            <h2>Grievance Management</h2>
+            <p>Here you can manage and resolve users' grievances.</p>
+            <!-- Example of grievance management list -->
+            <ul id="adminGrievanceList">
+                <li>Grievance 1: Pending - <button onclick="resolveGrievance(1)">Resolve</button></li>
+                <li>Grievance 2: Pending - <button onclick="resolveGrievance(2)">Resolve</button></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Grievance Redressal System. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Function to handle logout
+        function logout() {
+            // Clear any session data (for example, user role or token) if applicable
+            sessionStorage.removeItem('userLoggedIn');
+            window.location.href = "login.html";  // Redirect to login page
+        }
+
+        // Example of resolving grievances
+        function resolveGrievance(grievanceId) {
+            alert('Grievance ' + grievanceId + ' has been resolved.');
+            // You can further update the grievance status in the UI or backend here
+            document.getElementById('adminGrievanceList').innerHTML += `<li>Grievance ${grievanceId}: Resolved</li>`;
+        }
+    </script>
+</body>
+</html>
